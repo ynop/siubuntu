@@ -25,3 +25,11 @@ From: nvidia/cuda:9.2-cudnn7-devel-ubuntu16.04
     ln -s /usr/bin/pip3 /usr/bin/pip
 
     apt-get install -y python3-tk
+    
+    apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y locales
+    
+    sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
+    dpkg-reconfigure --frontend=noninteractive locales && \
+    update-locale LANG=en_US.UTF-8
+    
+    LANG en_US.UTF-8 
