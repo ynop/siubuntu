@@ -32,4 +32,3 @@ From: nvidia/cuda:9.2-cudnn7-devel-ubuntu16.04
     dpkg-reconfigure --frontend=noninteractive locales && \
     update-locale LANG=en_US.UTF-8
     
-    LANG en_US.UTF-8 
