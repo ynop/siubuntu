@@ -19,7 +19,7 @@ From: nvidia/cuda:9.2-cudnn7-devel-ubuntu16.04
     apt-get install -y  git-lfs
     git lfs install
 
-    apt-get install -y python3 python3-pip python3-venv
+    apt-get install -y python3 python3-pip python3-venv python3-dev
 
     rm /usr/bin/python && ln -s /usr/bin/python3 /usr/bin/python
     ln -s /usr/bin/pip3 /usr/bin/pip
