@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: nvidia/cuda:10.1-cudnn7-devel-ubuntu16.04
+From: nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
 
 %runscript
 
@@ -19,7 +19,7 @@ From: nvidia/cuda:10.1-cudnn7-devel-ubuntu16.04
     apt-get install -y  git-lfs
     git lfs install
 
-    apt-get install -y python3 python3-pip python3-venv python3-dev
+    apt-get install -y python3 python3-pip python3-venv python3-dev virtualenv
 
     rm /usr/bin/python && ln -s /usr/bin/python3 /usr/bin/python
     ln -s /usr/bin/pip3 /usr/bin/pip
