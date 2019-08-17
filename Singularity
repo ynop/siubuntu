@@ -9,7 +9,7 @@ From: nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
 
     apt-get update
     apt-get install -y gcc cmake moreutils curl wget git automake autoconf subversion swig build-essential unzip gawk
-    apt-get install -y ffmpeg libavc1394-0 libavc1394-dev libsox2 sox libsox-fmt-mp3 libstdc++6 libgomp1 libboost-all-dev zlib1g-dev libbz2-dev liblzma-dev libeigen3-dev libatlas3-base libpulse-dev libssl-dev libffi-dev
+    apt-get install -y ffmpeg libavc1394-0 libavc1394-dev sox libsox2 libsox-fmt-mp3 libstdc++6 libgomp1 libboost-all-dev zlib1g-dev libbz2-dev liblzma-dev libeigen3-dev libatlas3-base libpulse-dev libssl-dev libffi-dev
     
     apt-get install -y software-properties-common
 
